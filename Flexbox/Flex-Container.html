@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Container</title>
+    <link rel="stylesheet" href="Flex-Container.css" />
+    <script
+      src="https://kit.fontawesome.com/e0da1191c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="index.html">
+      <i class="fa-solid fa-backward blue"></i>
+    </a>
+    <div class="translate">
+      <h4 style="text-align: center">Translate</h4>
+      <ol>
+        <li>specified (n) = បញ្ជាក់</li>
+        <li>define (v)= កំណត់</li>
+        <li>stack = ជង់, ជាតម្រៀប</li>
+        <li>vertically (adv)= បញ្ឈរ</li>
+        <li>horizontally (adv)= ផ្តេក</li>
+        <li>wrap (v)= រុំ</li>
+        <li>whether(conj)= ថាតើ</li>
+        <li>necessary (adj)= ចាំបាច់</li>
+        <li>flow (v)= លំហូរ</li>
+        <li>shorthand (n)= អក្សរកាត់</li>
+        <li>align (v)= តម្រឹម</li>
+        <li>demonstrate (v)= បង្ហាញ</li>
+        <li>stretch (v)= ធ្វើអោយយឺត លាត</li>
+        <li>
+          baselines =
+          <a href="./img/baseline.png" target="_blank">បន្ទាត់អក្សរ</a> ,
+          បន្ទាត់(underline)
+        </li>
+        <li>remaining (v)= នៅតែ</li>
+        <li>common (adj)= ទូទៅ</li>
+      </ol>
+    </div>
+    <div class="intro">
+      <h1 style="text-decoration: underline">Parent Element (Container)</h1>
+      <p>
+        Like we specified in the previous chapter, this is a flex container (the
+        blue area) with three flex items:
+      </p>
+      <p>
+        The flex container becomes flexible by setting the
+        <span class="red">display</span> property to
+        <span class="red">flex</span>.
+      </p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <p>
+        A Flexible Layout must have a parent element with the
+        <em>display</em> property set to <em>flex</em>.
+      </p>
+      <p>
+        Direct child elements(s) of the flexible container automatically becomes
+        flexible items.
+      </p>
+    </div>
+    <hr>
+    <div class="lesson1">
+      <h2>1. The flex-direction Property</h2>
+      <p>
+        The <span class="red">flex-direction</span> property defines in which
+        direction the container wants to stack the flex items.
+      </p>
+      <div class="formula">Specifies the direction of the flexible items inside a flex container.</div>
+      <div class="flex-direction">
+        <p>
+          A. The <span class="red">column</span> value stacks the flex items
+          vertically (from top to bottom).
+        </p>
+        <p class="formula">flex-direction: column;</p>
+        <div class="flex-container column">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          B. The <span class="red">column-reverse</span> value stacks the flex
+          items vertically (but from bottom to top).
+        </p>
+        <p class="formula">flex-direction: column-reverse;</p>
+        <div class="flex-container column-reverse">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          C. The <span class="red">row</span> value stacks the flex items
+          horizontally (from left to right).
+        </p>
+        <p class="formula">flex-direction: row;</p>
+        <div class="flex-container row">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          D. The <span class="red">row-reverse</span> value stacks the flex
+          items horizontally (but from right to left).
+        </p>
+        <p class="formula">flex-direction: row-reverse;</p>
+        <div class="flex-container row-reverse">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson2">
+      <h2>2. The flex-wrap Property</h2>
+      <p>
+        The <span class="red">flex-wrap property</span> specifies whether the
+        flex items should wrap or not.
+      </p>
+      <div class="formula">Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.</div>
+      <div class="flex-wrap">
+        <p>
+          A. The <span class="red">wrap</span> value specifies that the flex
+          items will wrap if necessary.
+        </p>
+        <p class="formula">flex-wrap: wrap;</p>
+        <div class="flex-container wrap">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          B. The <span class="red">nowrap</span> value specifies that the flex
+          items will not wrap (this is default).
+        </p>
+        <p class="formula">flex-wrap: nowrap;</p>
+        <div class="flex-container nowrap">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          C. The <span class="red">wrap-reverse</span> value specifies that the
+          flexible items will wrap if necessary, in reverse order.
+        </p>
+        <p class="formula">flex-wrap: wrap-reverse</p>
+        <div class="flex-container wrap-reverse">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-flow">
+      <h2>The flex-flow Property</h2>
+      <p>
+        The <span class="red">flex-flow</span> property is a shorthand property
+        for setting both the <span class="red">flex-direction</span> and
+        <span class="red">flex-wrap</span> properties.
+      </p>
+      <div class="formula">A shorthand property for flex-direction and flex-wrap.</div>
+      <p class="formula">flex-flow: row wrap;</p>
+      <div class="flex-container flex-flow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </div>
+    <div class="lesson3">
+      <h2>3. The justify-content Property</h2>
+      <p>
+        The <span class="red">justify-content</span> property is used to align
+        the flex items.
+      </p>
+      <p class="formula">Horizontally aligns the flex items when the items do not use all available space on the main-axis.</p>
+      <div class="justify-content">
+        <p>
+          A. The <span class="red">center</span> value aligns the flex items at
+          the center of the container.
+        </p>
+        <p class="formula">justify-content: center;</p>
+        <div class="flex-container center">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+
+        <p>
+          B. The <span class="red">flex-start</span> value aligns the flex items
+          at the beginning of the container (this is default).
+        </p>
+        <p class="formula">justify-content: flex-start;</p>
+        <div class="flex-container flex-start">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+
+        </div>
+        <p>
+          C. The <span class="red">flex-end</span> value aligns the flex items
+          at the end of the container.
+        </p>
+        <p class="formula">justify-content: flex-end;</p>
+        <div class="flex-container flex-end">
+          <!--style="justify-content: flex-end"> -->
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          D. The <span class="red">space-around</span> value displays the flex
+          items with space before, between, and after the lines.
+        </p>
+        <p class="formula">justify-content: space-around;</p>
+        <div class="flex-container space-around">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          E. The <span class="red">space-between</span> value displays the flex
+          items with space between the lines.
+        </p>
+        <p class="formula">justify-content: space-between;</p>
+        <div class="flex-container space-between">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson4">
+      <h2>4. The align-items Property</h2>
+      <p>
+        The <span class="red">align-items</span> property is used to align the
+        flex items.
+      </p>
+      <div class="formula">Vertically aligns the flex items when the items do not use all available space on the cross-axis.</div>
+      <div class="align-items">
+        <p>
+          A. The <span class="red">center</span> value aligns the flex items in
+          the middle of the container.
+        </p>
+        <p class="formula">align-items: center;</p>
+        <div class="flex-container center">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          B. The <span class="red">flex-start</span> value aligns the flex items
+          at the top of the container
+        </p>
+        <p class="formula">align-items: flex-start;</p>
+        <div class="flex-container flex-start">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          C. The <span class="red">flex-end</span> value aligns the flex items
+          at the bottom of the container.
+        </p>
+        <p class="formula">align-items: flex-end;</p>
+        <div class="flex-container flex-end">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          D. The <span class="red">stretch</span> value stretches the flex items
+          to fill the container (this is default).
+        </p>
+        <p class="formula">align-items: stretch;</p>
+        <div class="flex-container stretch">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <p>
+          E. The <span class="red">baseline</span> value aligns the flex items
+          such as their baselines aligns.
+          <p><span class="bold">Note:</span> the example uses different font-size to demonstrate that the items gets aligned by the text baseline.</p>
+        </p>
+        <p class="formula">align-items: baseline;</p>
+        <div class="flex-container baseline">
+          <div><h1>1</h1></div>
+          <div><h6>2</h6></div>
+          <div><h3>3</h3></div>
+          <div><small>4</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson5">
+      <h2>5. The align-content Property</h2>
+      <p>
+        The <span class="red">align-content</span> property is used to align the
+        flex lines.
+      </p>
+      <div class="formula">Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.</div>
+      <p>
+        In these examples we use a 200 pixels high container, <br />with the
+        flex-wrap property set to wrap, to better demonstrate the align-content
+        property.
+      </p>
+      <div class="align-content">
+        <p>
+          A. The <span class="red">space-between</span> value displays the flex
+          lines with equal space between them.
+        </p>
+        <p class="formula">
+          align-content: space-between; <br />
+          height: 100px; <br />
+          flex-wrap: wrap; <br />
+          overflow: scroll;
+        </p>
+        <div class="flex-container space-between">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          B. The <span class="red">space-around</span> value displays the flex
+          lines with space before, between, and after them.
+        </p>
+        <p class="formula">align-content: space-around;</p>
+        <div class="flex-container space-around">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          C. The <span class="red">stretch</span> value stretches the flex lines
+          to take up the remaining space (this is default).
+        </p>
+        <p class="formula">align-content: stretch;</p>
+        <div class="flex-container stretch">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          D. The <span class="red">Center</span> value displays the flex lines
+          in the middle of the container.
+        </p>
+        <p class="formula">align-content: center;</p>
+        <div class="flex-container center">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          E. The <span class="red">flex-start</span> value displays the flex
+          lines at the start of the container.
+        </p>
+        <p class="formula">align-content: flex-start;</p>
+        <div class="flex-container flex-start">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+        <p>
+          F. The <span class="red">flex-end</span> value displays the flex lines
+          at the end of the container.
+        </p>
+        <p class="formula">align-content: flex-end;</p>
+        <div class="flex-container flex-end">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+        </div>
+      </div>
+    </div>
+    <div class="Perfect-Centering">
+      <h2>Perfect Centering</h2>
+      <p>
+        In the following example we will solve a very common style problem:
+        perfect centering.
+      </p>
+      <p>
+        <span class="bold">SOLUTION:</span> Set both the
+        <span class="red">justify-content</span> and
+        <span class="red">align-items</span> properties to
+        <span class="red">center</span>,<br />
+        and the flex item will be perfectly centered.
+      </p>
+      <div class="flex-container perfect-centering">
+        <div></div>
+      </div>
+    </div>
+    
+  </body>
+</html>

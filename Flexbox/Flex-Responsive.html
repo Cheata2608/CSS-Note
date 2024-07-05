@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Responsive</title>
+    <link rel="stylesheet" href="Flex-Responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/e0da1191c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="index.html">
+      <i class="fa-solid fa-backward"></i>
+    </a>
+    <h2>Responsive Flexbox</h2>
+    <p>
+      You learned from the <span class="red">CSS Media Queries</span> chapter
+      that you can use media queries to create different layouts for different
+      screen sizes and devices.
+    </p>
+    <p>
+      For example, if you want to create a two-column layout for most screen
+      sizes, and a one-column layout for small screen sizes (such as phones and
+      tablets), you can change the <span class="red">flex-direction</span> from
+      <span class="red">row</span> to <span class="red">column</span> at a
+      specific breakpoint (800px in the example below)
+    </p>
+    <br />
+    <div class="example1">
+      <p>
+        The "flex-direction: row;" stacks the flex items horizontally (from left
+        to right).
+      </p>
+      <p>
+        The "flex-direction: column;" stacks the flex items vertically (from top
+        to bottom).
+      </p>
+      <p>
+        <b
+          >Resize the browser window to see that the direction changes when the
+          screen size is 800px wide or smaller.</b
+        >
+      </p>
+
+      <div class="flex-container1">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
+      </div>
+    </div>
+    <br />
+    <div class="example2">
+      <p>
+        Another way is to change the percentage of the flex property of the flex
+        items to create different layouts for different screen sizes. Note that
+        we also have to include flex-wrap: wrap; on the flex container for this
+        example to work
+      </p>
+      <p>
+        In this example, we change the percentage of flex to create different
+        layouts for different screen sizes.
+      </p>
+      <p>
+        <b
+          >Resize the browser window to see that the direction changes when the
+          screen size is 800px wide or smaller.</b
+        >
+      </p>
+
+      <div class="flex-container2">
+        <div class="flex-item-left2">1</div>
+        <div class="flex-item-right2">2</div>
+      </div>
+    </div>
+
+    <div class="header">
+      <h1>Responsive Image Gallery</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div class="image">
+      <!-- Header -->
+      <div class="header">
+        <h1>Responsive Image Gallery</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="row">
+        <div class="column">
+          <img
+            src="https://www.w3schools.com/w3images/wedding.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/rocks.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/falls2.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/paris.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/nature.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/mist.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/paris.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.w3schools.com/w3images/underwater.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/ocean.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/wedding.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/mountainskies.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/rocks.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/underwater.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.w3schools.com/w3images/wedding.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/rocks.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/falls2.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/paris.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/nature.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/mist.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/paris.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            src="https://www.w3schools.com/w3images/underwater.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/ocean.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/wedding.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/mountainskies.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/rocks.jpg"
+            style="width: 100%"
+          />
+          <img
+            src="https://www.w3schools.com/w3images/underwater.jpg"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+    <p>For more:</p>
+    <h3 style="margin-bottom: 12vh">
+      <a href="web-responsive.html">Responsive Website using Flexbox</a>
+    </h3>
+  </body>
+</html>

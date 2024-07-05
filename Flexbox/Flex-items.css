@@ -1,0 +1,65 @@
+* {
+  font-family: sans-serif;
+  margin-left: 6px;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+p {
+  margin-left: 30px;
+  font-size: 1.1rem;
+}
+.red {
+  color: red;
+  margin-left: 0;
+}
+/* icon back to home  */
+.icon {
+  position: sticky;
+  top: 10px;
+  margin: 0;
+  color: red;
+}
+/* translate  */
+h4 {
+  text-align: center;
+}
+ol {
+  margin: 0 0 15px 0;
+}
+.translate {
+  width: 24vw;
+  height: 15vw;
+  position: sticky;
+  left: 72vw;
+  top: 2vw;
+  overflow-y: scroll;
+  background-color: #e9e6f5;
+}
+
+/* general  */
+.flex-container {
+  width: 36vw;
+  display: flex;
+  background-color: #b8b8ff;
+  margin: 0 0 40px 40px;
+  align-items: stretch;
+}
+
+.flex-container > div {
+  background-color: #f8f7ff;
+  width: 40px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+/* lesson6  */
+.align-self {
+  height: 80px;
+}
+.end {
+  margin-bottom: 100px;
+}

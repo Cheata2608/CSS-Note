@@ -1,0 +1,174 @@
+* {
+  font-family: sans-serif;
+  margin-left: 9px;
+}
+p {
+  font-size: 1.1rem;
+}
+
+.red {
+  color: red;
+  margin: 0;
+}
+.blue {
+  color: green;
+}
+.bold {
+  font-weight: bold;
+}
+.formula {
+  color: rgb(126, 15, 230);
+  margin: 0 0 0 30px;
+}
+.flex-container {
+  width: 60vh;
+  display: flex;
+  background-color: DodgerBlue;
+  margin-left: 20px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 6px;
+  padding: 9px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* general scroll */
+.flex-direction,
+.flex-wrap,
+.justify-content,
+.align-items,
+.align-content {
+  padding: 0 15px 20px 15px;
+  margin: 30px;
+  height: 50vh;
+  width: 50vw;
+  background-color: rgb(154, 208, 209);
+  overflow-y: scroll;
+}
+/* .flex-direction  */
+.flex-direction .flex-container {
+  flex-direction: column;
+}
+.flex-direction > .flex-container > div {
+  width: 60px;
+  /* line-height: 75px; */
+}
+/* B */
+.flex-direction > .column-reverse {
+  flex-direction: column-reverse;
+}
+/* C */
+.flex-direction > .row {
+  flex-direction: row;
+}
+/* D */
+/* for only use .row-rervse IT WILL GIVE ANOTHER */
+.flex-direction > .row-reverse {
+  flex-direction: row-reverse;
+}
+/* flex-wrap */
+.flex-wrap > .wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap > .nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap > .wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+/* flex-flow  */
+.flex-flow {
+  flex-flow: row wrap;
+}
+/* justify-content  */
+.justify-content > .center {
+  justify-content: center;
+}
+.justify-content > .flex-start {
+  justify-content: flex-start;
+}
+.justify-content .flex-end {
+  justify-content: flex-end;
+}
+.justify-content > .space-around {
+  justify-content: space-around;
+}
+.justify-content > .space-between {
+  justify-content: space-between;
+}
+/* align-items  */
+.align-items > .center {
+  height: 100px;
+  align-items: center;
+}
+.align-items > .flex-start {
+  height: 100px;
+  align-items: flex-start;
+}
+.align-items > .flex-end {
+  height: 100px;
+  align-items: flex-end;
+}
+.align-items > .stretch {
+  height: 100px;
+  align-items: stretch;
+}
+.align-items > .baseline {
+  height: 110px;
+  align-items: baseline;
+  /* text have margin bc inherit from (*) selector */
+}
+/* lesson5  */
+.align-content > div {
+  flex-wrap: wrap;
+  height: 200px;
+  overflow: scroll;
+}
+.align-content > .space-between {
+  align-content: space-between;
+  height: 100px;
+}
+
+.align-content > .space-around {
+  align-content: space-around;
+}
+.align-content > .stretch {
+  align-content: stretch;
+}
+.align-content > .center {
+  align-content: center;
+}
+.align-content > .flex-start {
+  align-content: flex-start;
+}
+.align-content > .flex-end {
+  align-content: flex-end;
+}
+.perfect-centering {
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 60px;
+}
+.perfect-centering > div {
+  width: 30px;
+  height: 30px;
+}
+
+/* translate to khmer  */
+ol {
+  margin: 0;
+}
+.translate {
+  width: 26vw;
+  height: 30vh;
+  background-color: #f1f1f1;
+  overflow-y: scroll;
+  /* position: absolute; */
+  left: 72vw;
+  top: 6vw;
+  position: sticky;
+}

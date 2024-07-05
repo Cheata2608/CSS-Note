@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-items</title>
+    <link rel="stylesheet" href="Flex-items.css" />
+    <script
+      src="https://kit.fontawesome.com/e0da1191c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="index.html" class="icon">
+      <i class="fa-solid fa-backward"></i>
+    </a>
+    <div class="translate">
+      <h4>Translate</h4>
+      <ol>
+        <li>appear (v)= លេចឡើង</li>
+        <li>relative (adj)= ដែលទាក់ទង</li>
+        <li>rest (n)= អ្វីដែលនៅសល់</li>
+        <li>shrink (v)= បង្រួម</li>
+        <li>basis (n)= មូលដ្ឋាន</li>
+        <li>initial (adj)= ដំបូង</li>
+        <li>alignment (n)= ការតម្រឹម</li>
+      </ol>
+    </div>
+    <div class="intro">
+      <h1>Child Elements (Items)</h1>
+      <p>
+        The direct child elements of a flex container automatically becomes
+        flexible (flex) items.
+      </p>
+      <p>All direct children of a flexible container becomes flexible items.</p>
+      <p class="red">All of this property is declare in html.</p>
+      <p class="red">
+        1-5 have<span style="color: black">align-items: stretch;</span> in
+        container.
+      </p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+    </div>
+    <div class="order">
+      <h2>1.The order Property</h2>
+      <p>
+        The <span class="red">order</span> property specifies the order of the
+        flex items.
+      </p>
+      <p>
+        The first flex item in the code does not have to appear as the first
+        item in the layout.
+      </p>
+      <p>The order value must be a number, default value is 0.</p>
+      <div class="flex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+      </div>
+    </div>
+    <div class="flex-grow">
+      <h2>2. The flex-grow Property</h2>
+      <p>
+        The <span class="red">flex-grow</span> property specifies how much a
+        flex item will grow relative to the rest of the flex items.
+      </p>
+      <p>
+        Make the third flex item grow eight times faster than the other flex
+        items.
+      </p>
+      <p>The value must be a number, default value is 0.</p>
+      <div class="flex-container">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+      </div>
+    </div>
+    <div class="flex-shrink">
+      <h2>3. The flex-shrink Property</h2>
+      <p>
+        The <span class="red">flex-shrink</span> property specifies how much a
+        flex item will shrink relative to the rest of the flex items.
+      </p>
+      <p>The value must be a number, default value is 1.</p>
+      <p>
+        Do not let the third flex item shrink as much as the other flex items.
+      </p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+      </div>
+    </div>
+    <div class="flex-basis">
+      <h2>4. The flex-basis Property</h2>
+      <p>
+        The <span class="red">flex-basis</span> property specifies the initial
+        length of a flex item.
+      </p>
+      <p>Set the initial length of the third flex item to 200 pixels.</p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 200px">3</div>
+        <div>4</div>
+      </div>
+    </div>
+    <div class="flex">
+      <h2>5. The flex Property</h2>
+      <p>
+        The <span class="red">flex</span> property is a shorthand property for
+        the <span class="red">flex-grow</span>,
+        <span class="red">flex-shrink</span>, and
+        <span class="red">flex-basis</span> properties.
+      </p>
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+      </div>
+    </div>
+    <div class="align-self">
+      <h2>6. The align-self Property</h2>
+      <p>
+        The <span class="red">align-self</span> property specifies the alignment
+        for the selected item inside the flexible container.
+      </p>
+      <p>
+        The <span class="red">align-self</span> property overrides the default
+        alignment set by the container's
+        <span class="red">align-items</span> property.
+      </p>
+      <p>
+        In these both examples we use a 80 pixels high container, to better
+        demonstrate the align-self property.
+      </p>
+      <p>A. Align the third flex item in the middle of the container.</p>
+      <div class="flex-container align-self">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+      </div>
+      <p>
+        B. Align the second flex item at the top of the container, and the third
+        flex item at the bottom of the container.
+      </p>
+      <div class="flex-container align-self end">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
